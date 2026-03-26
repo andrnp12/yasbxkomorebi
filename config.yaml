@@ -324,7 +324,7 @@ widgets:
     options:
       label: "<span>{icon}</span> {device_count}"
       label_alt: "{device_name}"
-      label_no_device: "No devices connected"
+      label_no_device: "0 devices"
       label_device_separator: ", "
       max_length: 10
       max_length_ellipsis: "..."
