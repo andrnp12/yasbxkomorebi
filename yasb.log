@@ -4239,3 +4239,22 @@ bars:
 2026-03-26 14:31:32,732 [DEBUG] [MainThread] [systray_widget/systray.py:263]: Systray icons refreshed
 2026-03-26 14:31:32,915 [INFO] [MainThread] [root/api.py:69]: Fetching new weather data at 2026-03-26 14:31:32.914965
 2026-03-26 14:41:31,773 [INFO] [MainThread] [root/api.py:69]: Fetching new weather data at 2026-03-26 14:41:31.773011
+2026-03-26 15:10:37,257 [INFO] [MainThread] [root/log.py:99]: YASB v1.9.1
+2026-03-26 15:10:37,258 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-03-26 15:10:37,258 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-03-26 15:10:38,370 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-03-26 15:10:38,800 [INFO] [MainThread] [root/bar_manager.py:95]: Starting KomorebiEventListener...
+2026-03-26 15:10:38,801 [INFO] [MainThread] [root/bar_manager.py:95]: Starting WindowsNotificationEventListener...
+2026-03-26 15:10:38,801 [INFO] [MainThread] [root/bar_manager.py:95]: Starting SystemEventListener...
+2026-03-26 15:10:38,808 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\administrator\.config\yasb
+2026-03-26 15:10:38,808 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-03-26 15:10:38,810 [INFO] [Dummy-7] [root/event_listener.py:55]: Created named pipe yasb-465b4ccc-28eb-11f1-9755-708bcd42fb41
+2026-03-26 15:10:39,096 [INFO] [MainThread] [root/update_service.py:429]: Background update checker started
+2026-03-26 15:10:39,189 [INFO] [Dummy-7] [root/event_listener.py:149]: Komorebi connected to named pipe: yasb-465b4ccc-28eb-11f1-9755-708bcd42fb41
+2026-03-26 15:10:39,193 [DEBUG] [MainThread] [systray_widget/systray.py:614]: Loading state from C:\Users\Administrator\AppData\Local\YASB\systray_state_BOEDISPLAY1.json
+2026-03-26 15:10:39,195 [DEBUG] [SystrayMonitor] [systray_widget/systray.py:63]: Systray monitor thread is starting...
+2026-03-26 15:10:39,465 [DEBUG] [SystrayMonitor] [systray_widget/systray_monitor.py:119]: Adding TaskbandHWND prop to hwnd 7079190
+2026-03-26 15:10:39,469 [DEBUG] [SystrayMonitor] [systray_widget/systray_monitor.py:197]: Finding real tray hwnd
+2026-03-26 15:10:39,476 [DEBUG] [MainThread] [systray_widget/systray.py:261]: Sending TaskbarCreated message: 49331
+2026-03-26 15:10:39,476 [DEBUG] [MainThread] [systray_widget/systray.py:263]: Systray icons refreshed
+2026-03-26 15:10:39,559 [INFO] [MainThread] [root/api.py:69]: Fetching new weather data at 2026-03-26 15:10:39.559666
