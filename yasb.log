@@ -4238,3 +4238,4 @@ bars:
 2026-03-26 14:31:32,732 [DEBUG] [MainThread] [systray_widget/systray.py:261]: Sending TaskbarCreated message: 49331
 2026-03-26 14:31:32,732 [DEBUG] [MainThread] [systray_widget/systray.py:263]: Systray icons refreshed
 2026-03-26 14:31:32,915 [INFO] [MainThread] [root/api.py:69]: Fetching new weather data at 2026-03-26 14:31:32.914965
+2026-03-26 14:41:31,773 [INFO] [MainThread] [root/api.py:69]: Fetching new weather data at 2026-03-26 14:41:31.773011
