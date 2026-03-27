@@ -15,11 +15,11 @@ bars:
       position: "top"
       center: false
     animation:
-      enabled: true
-      duration: 400
+      enabled: false
+      duration: 500
     blur_effect:
-      enabled: true
-      acrylic: true
+      enabled: false
+      acrylic: false
       dark_mode: false
       round_corners: false
       round_corners_type: "normal"
@@ -44,8 +44,8 @@ bars:
       - "clock"
       - "weather"
       right:
-      - "systray"
       - "grouped_widgets"
+      - "systray"
       - "bluetooth"
       - "network"
       - "battery"
@@ -106,6 +106,7 @@ widgets:
         pause: "\uf28b"
         prev_track: "\udb81\udcae"
         next_track: "\udb81\udcad"
+  
   memory:
     type: "yasb.memory.MemoryWidget"
     options:
@@ -124,6 +125,7 @@ widgets:
         low: 25
         medium: 50
         high: 90
+  
   cpu:
     type: "yasb.cpu.CpuWidget"
     options:
@@ -139,14 +141,36 @@ widgets:
       update_interval: 2000
       callbacks:
         on_right: "do_nothing"
+  
+  traffic:
+    type: "yasb.traffic.TrafficWidget"
+    options:
+      label: "<span>\ueb01</span> {download_speed}"
+      label_alt: "<span>\ueb01</span> Down {download_speed} | Up {upload_speed}"
+      update_interval: 1000
+      menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "None"
+        alignment: "right"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+      callbacks:
+        on_left: "toggle_menu"
+        on_right: "toggle_label"
+      label_shadow:
+        enabled: false
+
   systray:
     type: "yasb.systray.SystrayWidget"
     options:
       class_name: "systray"
-      label_collapsed: "\uf47d"
-      label_expanded: "\uf460"
+      label_collapsed: "\uf460"
+      label_expanded: "\uf47d"
       label_position: "right"
-      icon_size: 16
+      icon_size: 14
       pin_click_modifier: "alt"
       show_unpinned: false
       show_unpinned_button: true
@@ -154,6 +178,7 @@ widgets:
       show_volume: false
       show_network: false
       tooltip: true
+  
   home:
     type: "yasb.home.HomeWidget"
     options:
@@ -172,11 +197,12 @@ widgets:
         left: 6
         bottom: 0
         right: 4
+  
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "{%A, %d %B %Y %H:%M}"
-      label_alt: "{%H:%M:%S}"
+      label: "{%H:%M:%S}"
+      label_alt: "{%A, %d %B %Y %H:%M}"
       timezones: []
       calendar: 
         blur: true
@@ -188,6 +214,7 @@ widgets:
       callbacks:
         on_left: "toggle_calendar"
         on_right: "toggle_label"
+  
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
@@ -200,6 +227,7 @@ widgets:
       hide_empty_workspaces: true
       hide_if_offline: true
       animation: false
+  
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
@@ -228,6 +256,7 @@ widgets:
         left: 2
         bottom: 0
         right: 2
+  
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
@@ -249,6 +278,7 @@ widgets:
         left: 0
         bottom: 0
         right: 6
+  
   notifications:
     type: "yasb.notifications.NotificationsWidget"
     options:
@@ -265,6 +295,7 @@ widgets:
         left: 4
         bottom: 0
         right: 4
+  
   battery:
     type: "yasb.battery.BatteryWidget"
     options:
@@ -308,7 +339,7 @@ widgets:
       update_interval: 600
       hide_decimal: true
       units: "metric"
-      location: "Los Angeles, CA, USA"
+      location: "ID Mlonggo 59452"
       callbacks:
         on_left: "toggle_card"
         on_middle: "do_nothing"
@@ -374,12 +405,13 @@ widgets:
     options:
       label: "{win[title]}"
       label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
-      label_no_window: ""
+      label_no_window: "Desktop"
       label_icon: true
       label_icon_size: 16
       max_length: 36
       max_length_ellipsis: "..."
       monitor_exclusive: false
+  
   grouped_widgets:
     type: "yasb.grouper.GrouperWidget"
     options:
@@ -387,6 +419,7 @@ widgets:
       widgets: [
         "memory",
         "cpu",
+        "traffic"
       ]
       container_padding:
         top: 0
