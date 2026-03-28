@@ -44,8 +44,8 @@ bars:
       - "clock"
       - "weather"
       right:
-      - "grouped_widgets"
       - "systray"
+      - "grouped_widgets"
       - "bluetooth"
       - "network"
       - "battery"
@@ -167,8 +167,8 @@ widgets:
     type: "yasb.systray.SystrayWidget"
     options:
       class_name: "systray"
-      label_collapsed: "\uf460"
-      label_expanded: "\uf47d"
+      label_collapsed: "\uf47d"
+      label_expanded: "\uf460"
       label_position: "right"
       icon_size: 14
       pin_click_modifier: "alt"

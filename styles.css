@@ -380,7 +380,7 @@
     width: 16px;
     background-color: transparent;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 .systray .unpinned-visibility-btn:hover {
     border-radius: 4px;
@@ -779,4 +779,8 @@
 
 .traffic-widget .label {
     padding-right: 4px;
+    min-width: 70px;
+    /* display: inline-block; */
+    /* text-align: right; */
+    font-variant-numeric: tabular-nums;
 }
